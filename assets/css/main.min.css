@@ -1912,17 +1912,37 @@ textarea.form-control {
   position: relative;
   display: block;
   padding-left: 1.25rem;
+  
 }
 
 .form-check-input {
   position: absolute;
   margin-top: 0.3rem;
   margin-left: -1.25rem;
+  height: 1em;
+  width: 1em;
+  &:checked{
+    appearance: none;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='%23fff'/></svg>"); 
+  }
+  &:focus {
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(13,110,253,.25);
+  }
 }
 
 .form-check-input:disabled ~ .form-check-label {
   color: #8898aa;
 }
+
+.form-check-input[type=radio] {
+  border-radius: 50%;
+}
+
+
 
 .form-check-label {
   margin-bottom: 0;
@@ -16532,11 +16552,6 @@ textarea[resize="horizontal"] {
   margin-bottom: 0;
 }
 
-.card .table td,
-.card .table th {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
 
 p {
   font-size: 1rem;

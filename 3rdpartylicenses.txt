@@ -94,6 +94,9 @@ MIT
 @angular/service-worker
 MIT
 
+@fireflysemantics/validatorts
+MIT
+
 core-js
 MIT
 Copyright (c) 2014-2019 Denis Pushkarev
